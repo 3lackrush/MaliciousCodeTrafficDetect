@@ -40,7 +40,7 @@ def GetTraffic():
         #print("The url is %s",realUrl)
         #print("\n")
         try:
-            r = requests.get("http://"+realUrl,proxies=proxies,timeout=5)
+            r = requests.get("http://"+realUrl,proxies=proxies,timeout=1)
             status_code = r.status_code
 
             if status_code == 200:
